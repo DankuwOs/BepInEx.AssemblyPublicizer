@@ -8,7 +8,7 @@
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
-        <Version>0.4.3-virtual</Version>
+        <Version>0.4.5</Version>
 
         <PackageId>Danku.BepInEx.AssemblyPublicizer</PackageId>
 

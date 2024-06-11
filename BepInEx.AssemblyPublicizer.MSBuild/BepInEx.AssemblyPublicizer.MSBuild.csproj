@@ -12,9 +12,11 @@
         <NoPackageAnalysis>true</NoPackageAnalysis>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <PackageId>Danku.BepInEx.AssemblyPublicizer.MSBuild</PackageId>
-        <Version>0.4.3-virtual</Version>
+        <Version>0.4.5</Version>
         <Authors>BepInEx, Danku</Authors>
         <RepositoryUrl>https://github.com/DankuwOs/BepInEx.AssemblyPublicizer</RepositoryUrl>
+        <AssemblyName>Danku.BepInEx.AssemblyPublicizer.MSBuild</AssemblyName>
+        <RootNamespace>BepInEx.AssemblyPublicizer.MSBuild</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,7 +27,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="$(MSBuildProjectName).props" Pack="true" PackagePath="build"/>
+        <Content Include="Danku.BepInEx.AssemblyPublicizer.MSBuild.props">
+          <Pack>true</Pack>
+          <PackagePath>build</PackagePath>
+        </Content>
 
         <Compile Remove="IgnoresAccessChecksToAttribute.cs"/>
         <Content Include="IgnoresAccessChecksToAttribute.cs" Pack="true" PackagePath="contentFiles/cs/any" BuildAction="Compile"/>
